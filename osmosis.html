@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <title>Osmosis - Biology</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <section>
+      <nav
+        class="navbar navbar-expand-lg py-3 navbar-dark bg-primary"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url('img/background.jpg');
+        "
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="diffusion.html">Diffusion</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="osmosis.html">Osmosis</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="experiments.html">Experiments</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="simulations.html">Simulations</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="references.html">References</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row justify-content-center pt-5">
+          <div class="col-lg-6 text-center">
+            <h1>Osmosis</h1>
+          </div>
+        </div>
+        <p class="mb-3">
+          <b>Definition:</b> the net movement of water from a region of high
+          water concentration to a region of low water concentration through a
+          selectively permeable membrane.
+        </p>
+        <h2>Osmosis in Plant Cells</h2>
+        <ul>
+          <li>
+            Isotonic solution (flaccid): solute concentration inside the cell is
+            equal to the amount of water transported out from the cell.
+          </li>
+          <li>
+            Hypotonic solution (turgid): plant cells placed in a solution with a
+            high water concentration compared to their contents (eg pure water)
+            will gain water by osmosis and swell up until their cytoplasm and
+            cell membrane are pushing against their cell wall. They are said to
+            be turgid.
+          </li>
+          <li>
+            Hypertonic solution (plasmolyzed): plant cells placed in a solution
+            with a low water concentration compared to their contents
+            (concentrated sugar solution) will lose water by osmosis. Their cell
+            membranes will peel away from their cell walls and they are said to
+            be plasmolysed.
+          </li>
+        </ul>
+        <img src="img/plasmolysis.jpg" class="w-100 mb-5" alt="" />
+        <h2>Osmotic in Animal Cells</h2>
+        <p>
+          They do not have a cell wall, so will change size and shape when put
+          into solutions that are at a different concentration to the cell
+          contents.
+        </p>
+        <ul class="mb-5">
+          <li>
+            Isotonic solution: red blood cells placed in a solution with the
+            same water concentration as their cytoplasm (0.85 per cent salt
+            solution) will not experience an overall change in volume. No
+            osmosis occurs.
+          </li>
+          <li>
+            Hypotonic solution: red blood cells placed in a solution with a
+            higher water concentration compared to their contents (eg pure
+            water) will gain water by osmosis, swell up and burst.
+          </li>
+          <li>
+            Hypertonic solution: red blood cells placed in a solution with a
+            lower water concentration compared to their contents (eg 1.7 per
+            cent salt solution) will lose water by osmosis and shrink.
+          </li>
+        </ul>
+        <h2>Why is it important?</h2>
+        <p>
+          Osmosis is vital for maintaining the internal balance(promotes
+          homeostasis) of cells and organisms
+        </p>
+        <ul class="mb-5">
+          <li>
+            It regulates water uptake and loss in cells, influences plant
+            turgidity, and is crucial for processes like kidney function in
+            mammals.
+          </li>
+          <li>
+            Nutrients and minerals enter the cell by osmosis which is necessary
+            for the survival of cells.
+          </li>
+          <li>
+            If no osmosis occurs, cells could enter a state of having too much
+            water or too little water. This could cause cells to die.
+          </li>
+        </ul>
+        <h2>Osmotic Pressure as a Colligative Property</h2>
+        <p>
+          The osmotic pressure (&pi;) of a solution is the pressure required to
+          stop osmosis.
+        </p>
+        <p>
+          It happens because the vapor pressure of pure water is higher than the
+          vapor pressure of the solution, there is a net transfer of water from
+          the left beaker to the right one. Eventually, the transfer will
+          continue until no more water remains in the left beaker. A similar
+          driving force causes water to move from the pure solvent into the
+          solution during osmosis.
+        </p>
+        <h3 class="mb-3 mt-5">Formula</h3>
+        <div
+          class="text-center py-5 px-4 mb-5"
+          style="
+            border: solid black 1px;
+            border-radius: 20px;
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+          "
+        >
+          &pi; = MRT<br /><br />
+          <span class="" style="font-size: 1.3rem"
+            >&pi; = osmotic pressure (atm)<br />M = molarity (mol/L)<br />R =
+            gas constant (0.082 [L atm] / [mol K])<br />T = absolute temperature
+            (K)</span
+          >
+        </div>
+        <div class="d-flex justify-content-between mb-5">
+          <a href="diffusion.html" class="btn btn-primary"
+            ><i class="fa-solid fa-arrow-left"></i> Back to Diffusion</a
+          >
+          <a href="experiments.html" class="btn btn-primary"
+            >Next to Experiments <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

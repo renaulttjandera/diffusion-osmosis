@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/background.jpg");
+  background-size: cover;
+}
+
+.color-white {
+  color: white;
+}
+
+.margin {
+  margin-top: 26vh;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+canvas {
+  color: white;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 5rem;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.color-white-nav {
+  color: white;
+}
+
+.up-btn:hover,
+.color-white-nav:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: rgb(214, 214, 214);
+}
+
+.appear-mobile {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .appear-mobile {
+    display: block;
+  }
+  .disappear-mobile {
+    display: none;
+  }
+
+  .center-mobile {
+    text-align: center;
+  }
+
+  .up-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 50%;
+    z-index: 99;
+  }
+
+  .margin-top-3 {
+    margin-top: 1rem !important;
+  }
+}
+
+.margin-bot {
+  margin-bottom: 2rem;
+}
+
+#preloader {
+  background: rgb(2, 11, 42) url(img/preloader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: rgb(2, 11, 42) !important;
+}
